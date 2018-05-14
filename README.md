@@ -38,5 +38,5 @@ Key: glossary_GlossDiv_GlossList_GlossEntry_SortAs, Value: SGML
 Note how the nested key sequence is transformed to a snake_case variable name for the final key.
 
 Additional features:
-* Filter by key value, using the `-v` flag
+* Filter by value, corresponding to the key, using the `-v` flag
 * Set directory path via the `-d` flag

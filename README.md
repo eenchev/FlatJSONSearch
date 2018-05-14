@@ -9,22 +9,22 @@ Iterates over a directory of (several levels nested) JSONs. Checks if the key, p
 Say we have file called `hello.json` with the following content:
 ```json
 {
-    "glossary": {
-        "title": "example glossary",
-		"GlossDiv": {
-            "title": "S",
-			"GlossList": {
-                "GlossEntry": {
-                    "ID": "SGML",
-					"SortAs": "SGML",
-					"GlossSee": "markup"
-                }
+   "glossary":{
+      "title":"example glossary",
+      "GlossDiv":{
+         "title":"S",
+         "GlossList":{
+            "GlossEntry":{
+               "ID":"SGML",
+               "SortAs":"SGML",
+               "GlossSee":"markup"
             }
-        }
-    }
+         }
+      }
+   }
 }
 ```
-Executing the script with "SortAs" as key parameter like this:
+Executing the script with "SortAs" as key parameter:
 
 ```bash
 evgeni@x:~$ python ./flat_json_search.py -k "SortAs"
